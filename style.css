@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+nav{
+    width: 100%;
+    background-color: black;
+}
+a,li{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 80px;
+}
+.ele{
+    font-size: x-large;
+}
+input,button{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+}
+button{
+    background-color: rgb(85, 85, 212);
+    color: white;
+}
+.submit{
+    background-color: rgb(29, 29, 29);
+    width: 250px;
+    border: 1px white solid;
+
+}
+.ShowOnMobile{
+    display: none;
+}
+@media (max-width:1000px){
+ .ShowOnMobile{
+    display: flex;
+    margin-left: auto;
+}
+.HideOnMobile{
+    display: none;
+}   
+nav ul{
+    justify-content: flex-start;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+nav ul li{
+    margin-right: 20px;
+    
+}
+nav ul li a{
+    font-size: 70%;
+}
+
+}
+/* main */
+#search{
+    background-color: lightpink;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#main-search{
+    width: 800px;
+    height: 70px;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-right: none;
+}
+#svg-search{
+    background-color: white;
+    min-width: 850px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
